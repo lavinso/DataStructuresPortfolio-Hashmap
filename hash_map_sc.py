@@ -1,7 +1,5 @@
 # Name: Sonja Lavin
-# OSU Email: lavinso@oregonsate.edu
 # Course: CS261 - Data Structures
-# Assignment: 6 HashMap Implementation
 # Due Date: August, 15 2023
 # Description: Implementation of HashMap using Dynamic Array as underlying data
 # structure and singly linked list with each node storing a key/value pair to
@@ -255,10 +253,13 @@ def find_mode(da: DynamicArray) -> tuple[DynamicArray, int]:
 
     mode = DynamicArray()
     mode_frequency = 0
-
+      
     # iterate through the HashMap list of keys and values to find mode
+    
+    key_value_pairs = map.get_keys_and_values()
+    
     for index in range(map.get_keys_and_values().length()):
-        tuple = map.get_keys_and_values()[index]
+        tuple = key_value_pairs[index]
         element, frequency = tuple
         if frequency == mode_frequency:
             mode.append(element)
