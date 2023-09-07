@@ -1,7 +1,5 @@
 # Name: Sonja Lavin
-# OSU Email: lavinso@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment: 6 HashMap Implementation
 # Due Date: August, 15 2023
 # Description: Implementation of HashMap using Open Addressing with Quadratic Probing for
 # collision resolution. Key/Value pairs stored in an array. Methods include put(), get()
